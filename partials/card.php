@@ -1,16 +1,3 @@
-<?php
-session_start();
-
-try {
-    $bdd = new PDO('mysql:host=localhost;dbname=leadada;charset=utf8', 'root', 'root');
-} catch (Exception $e) {
-    die('Erreur : ' . $e->getMessage());
-}
-$reponse = $bdd->query('SELECT * FROM articles ORDER BY id DESC LIMIT 5');
-?>
-
-<?php include 'partials/header.php'; ?>
-
 <?php while ($donnees = $reponse->fetch()) {  ?>
 
     <div class="card" class="row mx-auto" style="width: 18rem;">
@@ -23,7 +10,3 @@ $reponse = $bdd->query('SELECT * FROM articles ORDER BY id DESC LIMIT 5');
     </div>
 
 <?php } ?>
-
-
-
-<?php include 'partials/footer.php'; ?>
