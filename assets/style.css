@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* Reset CSS 
 * {
     margin: 0;
     padding: 0;
@@ -43,4 +43,18 @@ nav ul li {
     padding: 0 .5rem;
     transition: 400ms ease-out;
     cursor: pointer;
+}
+*/
+
+a .logo {
+    width: 94px;
+}
+
+.bg-hero {
+    background-image: url("https://images.unsplash.com/photo-1630934240636-9d3199b56a4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80");
+    background-size: cover;
+}
+
+footer {
+    padding-top: 60px
 }
