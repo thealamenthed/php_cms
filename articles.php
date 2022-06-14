@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-unset($_SESSION['user']); // delete the user session variable
-
 $articleId = $_GET['id'];
 
 //var_dump($categorie);
