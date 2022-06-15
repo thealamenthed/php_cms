@@ -1,4 +1,4 @@
-/* Reset CSS 
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -11,50 +11,226 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-nav, nav ul {
-    display: flex;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    height: 6rem;
-    padding: .5rem 1rem;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    border-bottom: .015rem solid rgba(0, 0, 0, .2);
-    margin-bottom: 1rem;
-}
-
-a img{
-    width: 94px;
-}
-
-nav ul {
-    height: 100%;
-    align-self: center;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul li {
-    align-self: center;
-    padding: 0 .5rem;
-    transition: 400ms ease-out;
-    cursor: pointer;
-}
-*/
-
 a .logo {
     width: 94px;
 }
 
+.listing-recipes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 50px 0;
+    padding: 0 70px;
+}
+
+.home-title {
+    text-align: center;
+    margin: 15px;
+
+}
+
 .bg-hero {
-    background-image: url("https://images.unsplash.com/photo-1630934240636-9d3199b56a4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80");
+    background-size: cover;
+    height: 35rem;
+    background-attachment: fixed;
+}
+
+.bg-hero.home {
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/de66e9145052383.62975b605a711.jpg") no-repeat center center;
+    background-size: cover;
+    height: 35rem;
+    background-attachment: fixed;
+}
+
+h1.home {
+    font-size: 2.5rem;
+    color: #5c785b;
+    margin-top: 190px;
+}
+
+h1.title {
+    color: #ffffff;
+    padding-top: 195px;
+
+}
+
+h2.titre-cantine {
+    color: #5c785b;
+}
+
+
+
+
+.bg-hero.japon {
+    background-image: url("https://images.unsplash.com/photo-1568018508399-e53bc8babdde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80");
     background-size: cover;
 }
 
+h1.japon {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.japon {
+    color: #ffffff;
+}
+
+
+
+.bg-hero.vietnam {
+    background-image: url("https://images.unsplash.com/photo-1581414239816-0114393514e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1377&q=80");
+    background-size: cover;
+}
+
+h1.vietnam {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.vietnam {
+    color: #ffffff;
+}
+
+
+
+.bg-hero.thailande {
+    background-image: url("https://images.unsplash.com/photo-1618069432096-60411a4bdcda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1636&q=80");
+    background-size: cover;
+}
+
+h1.thailande {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.thailande {
+    color: #ffffff;
+}
+
+
+
+.bg-hero.coree {
+    background-image: url("https://images.unsplash.com/photo-1560724774-ce5f6c5a7978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+}
+
+h1.coree {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.coree {
+    color: #ffffff;
+}
+
+
+
+.bg-hero.malaisie {
+    background-image: url("https://images.unsplash.com/photo-1557752507-4f2fe433a3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+}
+
+h1.malaisie {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.malaisie {
+    color: #ffffff;
+}
+
+
+.bg-hero.taiwan {
+    background-image: url("https://images.unsplash.com/photo-1575631607396-2a3f54599367?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1557&q=80");
+    background-size: cover;
+}
+
+h1.taiwan {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.taiwan {
+    color: #ffffff;
+}
+
+
+
+.bg-hero.indonesie {
+    background-image: url("https://images.unsplash.com/photo-1567007046005-b0802fefeafa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+    background-size: cover;
+}
+
+h1.indonesie {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.indonesie {
+    color: #ffffff;
+}
+
+
+.bg-hero.cambodge {
+    background-image: url("https://images.unsplash.com/photo-1592195661973-71ce32b0aa5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");
+    background-size: cover;
+}
+
+h1.cambodge {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.cambodge {
+    color: #ffffff;
+}
+
+
+.bg-hero.inde {
+    background-image: url("https://images.unsplash.com/photo-1516709315038-c53bf87e8f48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+}
+
+h1.inde {
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+p.inde {
+    color: #ffffff;
+}
+
+
+
+
+.btn.btn-primary {
+    background-color: #80808069;
+    border-color: #ffffff;
+    color: #fff;
+}
+
+.btn.btn-primary:hover {
+    color: #fff;
+    background-color: rgba(59, 53, 73, 0.85);
+    transition: 0.5s;
+}
+
+p.justify {
+    text-align: justify;
+}
+
 footer {
-    padding-top: 60px
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.bg-light {
+    height: 100%;
+    padding: 15px 0;
+}
+
+.card-img-top {
+    height: 290px;
 }
