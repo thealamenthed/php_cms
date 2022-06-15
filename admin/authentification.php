@@ -1,6 +1,25 @@
+<?php
+session_start();
+?>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47ef3edca0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>La cantine asiatique</title>
+</head>
+
+
 <body>
     <!-- zone de connexion -->
-
+ 
     <form action="" method="POST">
         <h1>Connexion</h1>
 
@@ -11,6 +30,7 @@
         <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 
         <input type="submit" id='submit' value='LOGIN'>
+
 
 
         <?php
@@ -28,11 +48,10 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $identifiant = "dalila@hot.com";
-    $motdepasse = "123456";
 
 
-    
+
+
     /*V1*/
     echo "<h2>V1</h2>";
 
@@ -48,6 +67,7 @@
 
 
     /*V2*/
+    echo "<h2>V2</h2>";
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=leadada;charset=utf8', 'root', 'root');
     } catch (Exception $e) {
@@ -69,6 +89,8 @@
 
     if ($donnee = $reponse->fetch()) { // Si j'ai un jeu de résultat c'est que le couple email + password existe bien dans la base de données
         echo "Authentification OK<br/>";
+        $_SESSION['user_loggued'] = true;
+        header('location: /');
     } else { // Sinon c'est que le couple email motdepasse n'existe pas
         echo "Authentification NOK<br />";
     }
@@ -97,3 +119,6 @@
 
 
     ?>
+</body>
+
+</html>
